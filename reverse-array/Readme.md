@@ -1,0 +1,4 @@
+## link for the whiteboard
+
+[whiteboard](https://wbd.ms/share/v2/aHR0cHM6Ly93aGl0ZWJvYXJkLm1pY3Jvc29mdC5jb20vYXBpL3YxLjAvd2hpdGVib2FyZHMvcmVkZWVtL2EwY2VkNWNmNzkwMTRkZWNhYjJmMGJlYzhkYjc3MGNkX2M3MTQyNTMxLWRkNjgtNGE2Zi1iMDM2LTAzOWVjNTJkNmJkMV83N2E3ZTQ0ZC1kZTQxLTRmMTMtOThkMS00YzJlMjBmMmI2N2E=)
+
