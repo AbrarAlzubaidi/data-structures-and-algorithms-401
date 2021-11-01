@@ -4,3 +4,4 @@
 |challenge|link|
 |---------|----|
 |reverse-array|[reverse-array](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/reverse-array/Readme.md)|
+|array-insert-shift|[array-insert-shift](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/array-insert-shift/README.md)|
