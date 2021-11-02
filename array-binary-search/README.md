@@ -8,4 +8,4 @@ there is not any challenge for me today ^^ maybe how to deal with time since i a
 
 ## Approach & Efficiency
 time complexity: O(log n) 
-space complexity: O(1) from google 
+space complexity: O(1) 
