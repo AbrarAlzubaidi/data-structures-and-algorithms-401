@@ -40,6 +40,7 @@ class Linked_list():
             current.next = node
 
     def insert_at_beginning(self, value):
+
         """
         this methos for add a node either for an empty list or add at begining for an existing list
         
@@ -65,6 +66,7 @@ class Linked_list():
             self.head=node
 
     def is_include(self,searchedValue):
+
         """
         this methos for searching about value/node if it is exist then return true else return false
         
@@ -89,8 +91,9 @@ class Linked_list():
             current=current.next
         return False
         
-# "{ a } -> { b } -> { c } -> NULL"
+
     def __str__(self):
+
         """
         this methos for print the linked list
         
