@@ -119,6 +119,9 @@ class Linked_list():
                     current = current.next
 
     def insert_after(self, value, newVal):
+        """
+        this method to insert a new node after a specific node
+        """
         newNode= Node(newVal)
         current=self.head
 
