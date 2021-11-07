@@ -5,7 +5,7 @@ challenge has to build 3 methods:
 3. insert after: to insert node after specific node
 
 ## Whiteboard Process
-![]()
+![Whiteboard](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/cha.6.PNG)
 ### link to Whiteboard
 [Whiteboard](https://wbd.ms/share/v2/aHR0cHM6Ly93aGl0ZWJvYXJkLm1pY3Jvc29mdC5jb20vYXBpL3YxLjAvd2hpdGVib2FyZHMvcmVkZWVtL2YwNTI5N2I0NTkwODQxNGU5MTAxZGIyM2YyOWZmYTFmX2M3MTQyNTMxLWRkNjgtNGE2Zi1iMDM2LTAzOWVjNTJkNmJkMV9mYmYyYmQ4OC05NDI0LTQxNGMtYTNlZS01N2VjYThlNzcyM2M=)
 
