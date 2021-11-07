@@ -90,6 +90,52 @@ class Linked_list():
              
             current=current.next
         return False
+
+    def insert_before(self,value,newVal):   # (value to add before it, the new value to add)
+        """
+        this method to insert a new node before a specific node
+        """
+        newNode=Node(newVal)
+        current=self.head
+
+        # if linked list is not empty
+        if current is not None:
+            
+            # insert if linked list hold
+            while current.next is not None:
+                # insert if the value = to the first node in linked list
+                if current.value == value:
+                    print('in if state ',current.value)
+                    newNode.next=self.head
+                    self.head=newNode
+                    break
+                if current.next.value == value:
+                    print('in while loop ',current.value)
+                    newNode.next = current.next
+                    current.next = newNode
+                    break
+                    
+                else:
+                    current = current.next
+
+    def insert_after(self, value, newVal):
+        newNode= Node(newVal)
+        current=self.head
+
+        if current is not None: 
+            
+            while current.next is not None:
+                if current.value == value:
+                    newNode.next= current.next
+                    current.next = newNode
+                    break
+                else:
+                    current =current.next
+
+            if current.next == None:
+                current.next = newNode
+
+
         
 
     def __str__(self):
@@ -118,9 +164,7 @@ class Linked_list():
             result = "An empty linked list"
         else:
             current = self.head
-            print(current)
             while current:
-                print(current.value)
                 result += "{ "+f"{current.value}"+" } -> "
                 current = current.next
         result += "NULL"
@@ -133,6 +177,11 @@ if __name__ == "__main__":
      ll.insert_at_beginning(40)
      ll.insert_at_beginning(30)
      ll.insert_at_beginning(20)
+     ll.insert_before(40,100)
+     ll.insert_before(40,20)
+     ll.insert_after(440,500)
+     ll.insert_after(20,99)
+
      print(ll)
      
 

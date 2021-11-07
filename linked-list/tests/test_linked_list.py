@@ -53,6 +53,48 @@ def test_prit_list(linkedlist):
     actual=linkedlist.__str__()
     assert actual== expected
 
+# Can successfully add a node to the end of the linked list
+def test_append(linkedlist):
+    linkedlist.append(4)
+    expected = "{ hi } -> { 70 } -> { 50 } -> { 4 } -> NULL"
+    actual = linkedlist.__str__()
+    assert expected == actual
+
+# Can successfully add multiple nodes to the end of a linked list
+def test_append_2_nodes(linkedlist):
+    linkedlist.append(4)
+    linkedlist.append(10)
+    expected = "{ hi } -> { 70 } -> { 50 } -> { 4 } -> { 10 } -> NULL"
+    actual = linkedlist.__str__()
+    assert expected == actual
+# Can successfully insert a node before a node located i the middle of a linked list
+def test_insert_befor_node(linkedlist):
+    linkedlist.insert_before(50,"welcome")
+    expected = "{ hi } -> { 70 } -> { welcome } -> { 50 } -> NULL"
+    actual = linkedlist.__str__()
+    assert expected == actual
+
+# Can successfully insert a node before the first node of a linked list
+def test_insert_befor_first_node(linkedlist):
+    linkedlist.insert_before("hi",50)
+    expected = "{ 50 } -> { hi } -> { 70 } -> { 50 } -> NULL"
+    actual = linkedlist.__str__()
+    assert expected == actual
+
+# Can successfully insert after a node in the middle of the linked list
+def test_insert_after_node(linkedlist):
+    linkedlist.insert_after('hi',"welcome")
+    expected = "{ hi } -> { welcome } -> { 70 } -> { 50 } -> NULL"
+    actual = linkedlist.__str__()
+    assert expected == actual
+
+# Can successfully insert a node after the last node of the linked list
+def test_insert_after_last_node(linkedlist):
+    linkedlist.insert_after(50,"welcome")
+    expected = "{ hi } -> { 70 } -> { 50 } -> { welcome } -> NULL"
+    actual = linkedlist.__str__()
+    assert expected == actual
+
 @pytest.fixture
 def linkedlist():
     link_list=Linked_list()
