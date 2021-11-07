@@ -1,4 +1,4 @@
-# Singly Linked List
+## Singly Linked List
 linked list is a type of DS similar to arrays created by chain of nodes
 has 2 pointer: 
 1. head which points to the first node
