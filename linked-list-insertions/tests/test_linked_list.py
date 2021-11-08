@@ -1,6 +1,6 @@
 from linked_list import __version__
 
-from linked_list.linked_list import Node,Linked_list
+from linked_list_insertions.linked_list import Node , Linked_list
 
 import pytest
 
@@ -95,13 +95,14 @@ def test_insert_after_last_node(linkedlist):
     actual = linkedlist.__str__()
     assert expected == actual
 
+
 @pytest.fixture
 def linkedlist():
-    link_list=Linked_list()
-    link_list.insert_at_beginning(50)
-    link_list.insert_at_beginning(70)
-    link_list.insert_at_beginning('hi')
-    return link_list
+    ll = Linked_list()
+    ll.insert_at_beginning(50)
+    ll.insert_at_beginning(70)
+    ll.insert_at_beginning('hi')
+    return ll
 
 
 
