@@ -1,6 +1,6 @@
 from linked_list import __version__
 
-from linked_list.linked_list import Node , Linked_list
+from linked_list_insertions.linked_list import Node , Linked_list
 
 import pytest
 

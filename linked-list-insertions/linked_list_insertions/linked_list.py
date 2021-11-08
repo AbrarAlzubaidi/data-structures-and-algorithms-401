@@ -16,27 +16,27 @@ class Linked_list():
         """
         this method for return the nth index in the linked-list from end of it
         """
-        n =0
+        count =0
         current = self.head
         while current:
             current = current.next
-            n = n + 1
+            count = count + 1
         k+=1
-        if n==1:
+        if count==1:
             return self.head.value
         else:
-            while k>0 and k<n:
-                if n >= k:
+            while k>0 and k<count:
+                if count >= k:
                     current = self.head
                     # this for loop i take it from techiedelight.com it helps me ^^
-                    for i in range(n - k):
+                    for i in range(count - k):
                         current = current.next
                     return current.value
             if k<=0:
                     return 'you entered a negative index'
-            if k-1 == n:
-                return f'you have to enter a number between 0 and {n}'
-            if k>n:
+            if k-1 == count:
+                return f'you have to enter a number between 0 and {count}'
+            if k>count:
                 return 'you enter a number biggest than length of the liked-list'
             
 
