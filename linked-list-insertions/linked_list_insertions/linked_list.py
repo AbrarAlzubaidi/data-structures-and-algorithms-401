@@ -10,7 +10,39 @@ class Linked_list():
     count =0
     def __init__(self):
         self.head=None
+    
 
+    def kFromEnd(self, k):
+        """
+        this method for return the nth index in the linked-list from end of it
+        """
+        n =0
+        current = self.head
+        while current:
+            current = current.next
+            n = n + 1
+        k+=1
+        if n==1:
+            return self.head.value
+        else:
+            while k>0 and k<n:
+                if n >= k:
+                    current = self.head
+                    # this for loop i take it from techiedelight.com it helps me ^^
+                    for i in range(n - k):
+                        current = current.next
+                    return current.value
+            if k<=0:
+                    return 'you entered a negative index'
+            if k-1 == n:
+                return f'you have to enter a number between 0 and {n}'
+            if k>n:
+                return 'you enter a number biggest than length of the liked-list'
+            
+
+
+    
+    
     def append(self, value):
         """
         this methos for add a node either for an empty list or add from end to an existing list
@@ -39,6 +71,7 @@ class Linked_list():
                 current = current.next
             current.next = node
 
+
     def insert_at_beginning(self, value):
 
         """
@@ -64,6 +97,7 @@ class Linked_list():
         else:
             node.next=self.head
             self.head=node
+
 
     def is_include(self,searchedValue):
 
@@ -91,6 +125,7 @@ class Linked_list():
             current=current.next
         return False
 
+
     def insert_before(self,value,newVal):   # (value to add before it, the new value to add)
         """
         this method to insert a new node before a specific node
@@ -105,18 +140,17 @@ class Linked_list():
             while current.next is not None:
                 # insert if the value = to the first node in linked list
                 if current.value == value:
-                    print('in if state ',current.value)
                     newNode.next=self.head
                     self.head=newNode
                     break
                 if current.next.value == value:
-                    print('in while loop ',current.value)
                     newNode.next = current.next
                     current.next = newNode
                     break
                     
                 else:
                     current = current.next
+
 
     def insert_after(self, value, newVal):
         """
@@ -138,8 +172,6 @@ class Linked_list():
             if current.next == None:
                 current.next = newNode
 
-
-        
 
     def __str__(self):
 
@@ -184,7 +216,7 @@ if __name__ == "__main__":
      ll.insert_before(40,20)
      ll.insert_after(440,500)
      ll.insert_after(20,99)
-
+     print(ll.kFromEnd(0))
      print(ll)
      
 
