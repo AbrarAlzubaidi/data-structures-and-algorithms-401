@@ -9,11 +9,13 @@ challenge has to build 3 methods:
 
 **challenge-6**
 
-![whiteboard]()
+![Whiteboard](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/cha.6.PNG)
 
 **challenge-7**
 
-![whiteboard]()
+![whiteboard](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/cha.7.PNG)
+
+
 
 ### link to Whiteboard
 
@@ -29,6 +31,7 @@ challenge has to build 3 methods:
 2. insert before---> time O(n) space O(1)
 3. insert after---> time O(n) space O(1)
 4. kth from end----> time O(n^2)  space(n)
+
 ## Solution
 1. append---> 
 
@@ -48,6 +51,7 @@ challenge has to build 3 methods:
         original= "{ hi } -> { 70 } -> { 50 } -> NULL"
         linkedlist.insert_after('hi',"welcome")
         expected = "{ hi } -> { welcome } -> { 70 } -> { 50 } -> NULL"
+
 
 3. kth from end----->
 
