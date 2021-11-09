@@ -11,6 +11,43 @@ class Linked_list():
     def __init__(self):
         self.head=None
     
+    def merge(self, p=None, q= None):
+        if p == None or q==None:
+            raise Exception('you entered one limked-list please enter 2 linked-lists') 
+        else:
+            current1 = p.head
+            current2 = q.head
+
+            # swap their positions until one finishes off
+            while current1 != None and current2 != None:
+                # if q length > p length
+                if current1.next == None:
+                    current1.next = current2
+                    break
+
+                # if p length > q length
+                if current2 == None:
+                    while current1 is not None:
+                        current1=current1.next
+                    if current2.next is None:
+                        current1.next = current2
+                    break
+
+                # if q length = p length
+                else:
+                    # Save next pointers
+                    p_next = current1.next
+                    q_next = current2.next
+        
+                    # make current2 as next of current1
+                    current2.next = p_next  # change next pointer of current2
+                    current1.next = current2  # change next pointer of current1
+        
+                    # update current pointers for next iteration
+                    current1 = p_next
+                    current2 = q_next
+                    q.head = current2
+
 
     def kFromEnd(self, k):
         """
@@ -39,10 +76,6 @@ class Linked_list():
             if k>count:
                 return 'you enter a number biggest than length of the liked-list'
             
-
-
-    
-    
     def append(self, value):
         """
         this methos for add a node either for an empty list or add from end to an existing list
@@ -207,17 +240,23 @@ class Linked_list():
 
 
 if __name__ == "__main__":
-     ll = Linked_list()
-     ll.insert_at_beginning(440)
-     ll.insert_at_beginning(40)
-     ll.insert_at_beginning(30)
-     ll.insert_at_beginning(20)
-     ll.insert_before(40,100)
-     ll.insert_before(40,20)
-     ll.insert_after(440,500)
-     ll.insert_after(20,99)
-     print(ll.kFromEnd(0))
-     print(ll)
+     l1 = Linked_list()
+     l2 = Linked_list()
+
+     l1.append(1)
+     l1.append(3)
+     l1.append(2)
+
+     l2.append(5)
+     l2.append(9)
+     l2.append(4)
+
+     print('first list: ',l1)
+     print('second list: ',l2)
+     l1.merge(l1,l2)
+     print('merge lists: ',l1)
+
+
      
 
     
