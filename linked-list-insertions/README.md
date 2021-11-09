@@ -10,11 +10,13 @@ challenge has to build 3 methods:
 
 **challenge-6**
 
-![whiteboard]()
+![Whiteboard](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/cha.6.PNG)
 
 **challenge-7**
 
-![whiteboard]()
+![whiteboard](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/cha.7.PNG)
+
+
 
 **challenge-8**
 
@@ -39,6 +41,8 @@ challenge has to build 3 methods:
 4. kth from end----> time O(n^2)  space(n)
 5. zip-2-linked-lists----->O(n*m)  space(n+m) which n: is the length of the first linked-list
 m: is the length of the second linked-list
+
+
 ## Solution
 1. append---> 
 
@@ -59,6 +63,7 @@ m: is the length of the second linked-list
         linkedlist.insert_after('hi',"welcome")
         expected = "{ hi } -> { welcome } -> { 70 } -> { 50 } -> NULL"
 
+
 3. kth from end----->
 
         ll = Linked_list()
@@ -78,4 +83,4 @@ m: is the length of the second linked-list
         actual= linkedlist1.__str__()
         assert expected == actual
 
-       
+
