@@ -9,3 +9,4 @@
 |4. linked-list|[linked-list](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/linked-list/linked-list/README.md)|
 |5. linked-list-insertion|[linked-list-insertion](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/README.md)|
 |6. linked-list-kth-from-end|[linked-list-kth-from-end](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/README.md)|
+|7. zip-2-linked-lists|[zip-2-linked-lists](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/README.md)
