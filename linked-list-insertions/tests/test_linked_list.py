@@ -1,11 +1,7 @@
-from linked_list import __version__
-
 from linked_list_insertions.linked_list import Node , Linked_list
 
 import pytest
 
-def test_version():
-    assert __version__ == '0.1.0'
 
 # Can successfully instantiate an empty linked list
 def test_empty_list():
