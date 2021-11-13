@@ -27,10 +27,7 @@ class Linked_list():
 
                 # if p length > q length
                 if current2 == None:
-                    while current1 is not None:
-                        current1=current1.next
-                    if current2.next is None:
-                        current1.next = current2
+                    current1.next = current2
                     break
 
                 # if q length = p length
@@ -239,24 +236,58 @@ class Linked_list():
         return result
 
 
+def zipLists(p = None, q = None):
+    if p == None or q==None:
+            raise Exception('you entered one limked-list please enter 2 linked-lists') 
+    else:
+        current1 = p.head
+        current2 = q.head
+
+        # swap their positions until one finishes off
+        while current1 != None and current2 != None:
+            # if q length > p length
+            if current1.next == None:
+                current1.next = current2
+                break
+
+            # if p length > q length
+            if current2 == None:
+                current1.next = current2
+                break
+
+            # if q length = p length
+            else:
+                # Save next pointers
+                p_next = current1.next
+                q_next = current2.next
+        
+                # make current2 as next of current1
+                current2.next = p_next  # change next pointer of current2
+                current1.next = current2  # change next pointer of current1
+        
+                # update current pointers for next iteration
+                current1 = p_next
+                current2 = q_next
+                q.head = current2
+
+
+
 if __name__ == "__main__":
-     l1 = Linked_list()
-     l2 = Linked_list()
+    l1 = Linked_list()
+    l2 = Linked_list()
+    l3 = Linked_list()
 
-     l1.append(1)
-     l1.append(3)
-     l1.append(2)
+    l1.append(1)
+    l1.append(3)
+    l1.append(2)
 
-     l2.append(5)
-     l2.append(9)
-     l2.append(4)
+    l2.append(5)
+    l2.append(9)
+    l2.append(4)
 
-     print('first list: ',l1)
-     print('second list: ',l2)
-     l1.merge(l1,l2)
-     print('merge lists: ',l1)
-
-
-     
-
-    
+    print('first list: ',l1)
+    print('second list: ',l2)
+    #  l1.merge(l1,l2)
+    #  print('merge lists: ',l1)
+    zipLists(l1,l2)
+    print('lists after zipped',l1)
