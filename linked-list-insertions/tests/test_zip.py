@@ -1,11 +1,11 @@
-from linked_list_insertions.linked_list import Node , Linked_list
+from linked_list_insertions.linked_list import Node , Linked_list, zipLists
 
 import pytest
 
 # if list-1 length = list-2 length:
 def test_equal_lists(linkedlist1 , linkedlist2):
     expected = '{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> NULL' 
-    linkedlist1.merge(linkedlist1, linkedlist2)
+    zipLists(linkedlist1, linkedlist2)
     actual= linkedlist1.__str__()
     assert expected == actual
 
@@ -13,7 +13,7 @@ def test_equal_lists(linkedlist1 , linkedlist2):
 def test_list1_greater(linkedlist1 , linkedlist2):
     linkedlist1.append(6)
     expected = '{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> { 6 } -> NULL' 
-    linkedlist1.merge(linkedlist1, linkedlist2)
+    zipLists(linkedlist1, linkedlist2)
     actual= linkedlist1.__str__()
     assert expected == actual
 
@@ -21,7 +21,7 @@ def test_list1_greater(linkedlist1 , linkedlist2):
 def test_list2_greater(linkedlist1 , linkedlist2):
     linkedlist2.append(6)
     expected = '{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> { 6 } -> NULL' 
-    linkedlist1.merge(linkedlist1, linkedlist2)
+    zipLists(linkedlist1, linkedlist2)
     actual= linkedlist1.__str__()
     assert expected == actual
 

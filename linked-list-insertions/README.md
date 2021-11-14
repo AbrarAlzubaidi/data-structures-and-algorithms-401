@@ -10,15 +10,16 @@ challenge has to build 3 methods:
 
 **challenge-6**
 
-![whiteboard]()
+![Whiteboard](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/cha.6.PNG)
 
 **challenge-7**
 
-![whiteboard]()
+![whiteboard](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/cha.7.PNG)
+
 
 **challenge-8**
 
-![whiteboard]()
+![whiteboard](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/cha.8.PNG)
 
 ### link to Whiteboard
 
@@ -37,29 +38,34 @@ challenge has to build 3 methods:
 2. insert before---> time O(n) space O(1)
 3. insert after---> time O(n) space O(1)
 4. kth from end----> time O(n^2)  space(n)
-5. zip-2-linked-lists----->O(n*m)  space(n+m) which n: is the length of the first linked-list
+5. zip-2-linked-lists----->O(n*m)  space(1)
+
+which n: is the length of the first linked-list
 m: is the length of the second linked-list
+
+
 ## Solution
-1. append---> 
+1. append--->method 
 
         original= "{ hi } -> { 70 } -> { 50 } -> NULL"
         linkedlist.append(4)
         expected = "{ hi } -> { 70 } -> { 50 } -> { 4 } -> NULL"
         
 
-2. insert before--->
+2. insert before--->method
 
         original= "{ hi } -> { 70 } -> { 50 } -> NULL"
         linkedlist.insert_before(50,"welcome")
         expected = "{ hi } -> { 70 } -> { welcome } -> { 50 } -> NULL"
         
-3. insert after--->
+3. insert after--->method
 
         original= "{ hi } -> { 70 } -> { 50 } -> NULL"
         linkedlist.insert_after('hi',"welcome")
         expected = "{ hi } -> { welcome } -> { 70 } -> { 50 } -> NULL"
 
-3. kth from end----->
+
+3. kth from end----->method
 
         ll = Linked_list()
         ll.insert_at_beginning(50)
@@ -70,12 +76,12 @@ m: is the length of the second linked-list
         actual = linkedlist.kFromEnd(1)
         assert expected == actual
 
-4. zip-2-linked-lists----->
+4. zip-2-linked-lists----->function
 
 
         expected = '{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> NULL' 
-        linkedlist1.merge(linkedlist1, linkedlist2)
+        zipLists(linkedlist1, linkedlist2)
         actual= linkedlist1.__str__()
         assert expected == actual
 
-       
+
