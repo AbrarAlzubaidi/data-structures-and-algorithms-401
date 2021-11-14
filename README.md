@@ -13,3 +13,4 @@
 |8. zip-2-linked-lists|[zip-2-linked-lists](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/linked-list-insertions/README.md)
 |9. Linked-List-is-palindrome|[Linked-List-is-palindrome](https://docs.google.com/spreadsheets/d/18nntyjs1zESQQM30WrMSb0Mb_5biCjU301Y1TynbkqY/edit?usp=sharing)
 |10. stack-and-queue|[stack-and-queue](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/README.md)
+|11. stack-queue-pseudo|[stack-queue-pseudo](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/README.md)
