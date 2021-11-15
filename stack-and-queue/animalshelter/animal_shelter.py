@@ -12,7 +12,7 @@ class  AnimalShelter:
             return self.dog.enqueue(name)
 
         else:
-            return None
+            raise Exception ("please enter your animal's name than the type (dog or cat) ")
 
 
     def dequeue (self,pref=None):
