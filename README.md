@@ -15,3 +15,4 @@
 |9. Linked-List-is-palindrome|[Linked-List-is-palindrome](https://docs.google.com/spreadsheets/d/18nntyjs1zESQQM30WrMSb0Mb_5biCjU301Y1TynbkqY/edit?usp=sharing)
 |10. stack-and-queue|[stack-and-queue](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/README.md)
 |11. stack-queue-pseudo|[stack-queue-pseudo](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/README.md)
+|12. stack-queue-animal-shelter|[stack-queue-animal-shelter](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/animalshelter/README.md)
