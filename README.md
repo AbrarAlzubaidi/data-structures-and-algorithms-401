@@ -16,3 +16,6 @@
 |10. stack-and-queue|[stack-and-queue](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/README.md)
 |11. stack-queue-pseudo|[stack-queue-pseudo](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/README.md)
 |12. stack-queue-animal-shelter|[stack-queue-animal-shelter](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/animalshelter/README.md)
+|13. stack-queue-brackets|[stack-queue-brackets](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/stackQueueBrackets/README.md)
+
+
