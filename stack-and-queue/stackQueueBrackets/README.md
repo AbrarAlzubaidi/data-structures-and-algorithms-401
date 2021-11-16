@@ -9,7 +9,7 @@ stack_queue_brackets to check if group of brackets are match or not (return bool
 
 [whiteboard](https://wbd.ms/share/v2/aHR0cHM6Ly93aGl0ZWJvYXJkLm1pY3Jvc29mdC5jb20vYXBpL3YxLjAvd2hpdGVib2FyZHMvcmVkZWVtLzliNDVkMDQwZTMzNTQyNzhhOGM0M2Y1MTE0Zjg3NTgzX2M3MTQyNTMxLWRkNjgtNGE2Zi1iMDM2LTAzOWVjNTJkNmJkMV9kZWE5ZmE2NS0zNGJlLTQ5OGUtODA3NS01ZGFlODZhMjNhMjE=)
 
-![whiteboard]()
+![whiteboard](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/stackQueueBrackets/cha.13.PNG)
 ## Approach & Efficiency
 stack implimitation push, pop, peek (LIFO)
 
