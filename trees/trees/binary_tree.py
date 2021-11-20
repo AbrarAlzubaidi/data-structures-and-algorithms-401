@@ -4,6 +4,9 @@ class Tree:
         self.root = None
     
     def pre_order(self):
+        """
+        to iterat tree as root-> left-> right
+        """
         output = []
         
         def _traverse(_root = None):
@@ -21,6 +24,9 @@ class Tree:
         return _traverse
 
     def in_order(self):
+        """
+        to iterat tree as left-> root-> right
+        """
         output = []
         
         def _traverse(_root = None):
@@ -36,6 +42,9 @@ class Tree:
         return _traverse
 
     def post_order(self):
+        """
+        to iterat tree as left-> right-> root
+        """
         output = []
         
         def _traverse(_root = None):
@@ -53,6 +62,9 @@ class Tree:
             
 
 def create_tree():
+    """
+        to create tree 
+    """
     tree=Tree()
     tree.root=Node("A")
     tree.root.left=Node("B")

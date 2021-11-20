@@ -4,9 +4,12 @@ from node import Node
 
 class BST(Tree):
     def add(self,_root ,value ):
+        """
+        to add into BST a node in the right place
+        """
         node = Node(value)
         if _root is None:
-            _root=node     
+            _root = node     
         else:
             if _root.value<node.value:
                 if _root.right is None:
@@ -20,6 +23,9 @@ class BST(Tree):
                     self.add(_root.left,value)
 
     def contains(self, _root,value):
+        """
+        to search on BST on a node
+        """
      
         if _root is None or _root.value == value:
             return f"is number {value} is exist ? {True}"
@@ -38,6 +44,9 @@ class BST(Tree):
             
         
 def create_tree():
+    """
+        to create a BST tree 
+    """
     tree=Tree()
     tree.root=Node(23)
     tree.root.left=Node(8)

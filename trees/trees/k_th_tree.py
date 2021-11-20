@@ -21,6 +21,9 @@ class Node:
 class K_th_Tree:
     output=[]
     def breadthFirst(self,root):
+        """
+        search through a tree one level at a time  
+        """
         if root is not None:
             self.output.append(root.value)
             
