@@ -59,6 +59,22 @@ class Tree:
             output.append(_root.value)
             return output
         return _traverse
+
+    def get_max(self, _root):
+        if _root is None:
+            raise Exception(' empty tree')
+        max = _root.value
+        left_max=max
+        right_max =max
+        if _root.left is not None:
+            left_max = self.get_max(_root.left)
+        if _root.right is not None:
+            right_max = self.get_max(_root.right)
+        if left_max > max:
+            max = left_max
+        if right_max > max:
+            max = right_max
+        return max
             
 
 def create_tree():
@@ -83,3 +99,4 @@ if __name__ == "__main__":
     print('pre-order: ',preOrder(tree.root))
     print('in-order: ',inOrder(tree.root))
     print('post-order: ',postOrder(tree.root))
+ 
