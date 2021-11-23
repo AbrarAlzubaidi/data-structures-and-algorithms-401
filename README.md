@@ -17,6 +17,10 @@
 |11. stack-queue-pseudo|[stack-queue-pseudo](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/README.md)
 |12. stack-queue-animal-shelter|[stack-queue-animal-shelter](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/animalshelter/README.md)
 |13. stack-queue-brackets|[stack-queue-brackets](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/stack-and-queue/stackQueueBrackets/README.md)
-|13. tree-max|[tree-max](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/trees/maxTree/README.md)
+|14. duck-duck-goose|[duck-duck-goose]( https://drive.google.com/drive/folders/1CqkTs7tdTRlTTI9WepgpQfVe7YS8xu0Y?usp=sharing)
+|15. trees|[trees](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/trees/README.md)
+|16. tree-max|[tree-max](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/main/trees/maxTree/README.md)
+|17. treeBreathFirst|[treeBreathFirst](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/tree-breadth-first/trees/treeBreathFirst/README.md)
+|18. tree-fizz-buzz|[tree-fizz-buzz](https://github.com/AbrarAlzubaidi/data-structures-and-algorithms-401/blob/tree-fizz-buzz/trees/k_ary_tree/README.md)
 
 
