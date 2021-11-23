@@ -1,12 +1,11 @@
 from trees.binary_tree import Tree
-from queue import Queue
+from treeBreathFirst.queue import Queue
 
 class Node:
     def __init__(self, value = None):
         self.value = value
         self.left = None
         self.right = None
-
 
 def breadthFirst(root):
   """
@@ -22,11 +21,13 @@ def breadthFirst(root):
       if f is not None:
         output.append(f.value)
 
-        if root.left is not None:
+        if f.left is not None:
           queue.enqueue(f.left)
 
-        if root.right is not None:
+        if f.right is not None:
           queue.enqueue(f.right)
+  else:
+    raise Exception('empty tree')
 
   return output
 

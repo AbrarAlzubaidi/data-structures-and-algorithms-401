@@ -9,6 +9,18 @@ def test_breath_first_binary_tree(tree):
     expected = [2, 7, 5, 2, 6, 9, 5, 11, 4]
     assert actual == expected
 
+def test_breath_first_one_node():
+    tree =Tree()
+    tree.root =Node(1)
+    expected = [1]
+    actual = breadthFirst(tree.root)
+    assert actual == expected
+
+def test_breath_first_empty_node():
+    tree =Tree()
+    with pytest.raises(Exception):
+       breadthFirst(tree.root)
+       
 @pytest.fixture
 def tree():
     tree = Tree()
