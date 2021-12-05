@@ -184,8 +184,11 @@ if __name__ == "__main__":
      ll.insert_before(40,20)
      ll.insert_after(440,500)
      ll.insert_after(20,99)
-
      print(ll)
+     i=0
+     while i <1000:
+         print('hi')
+         i+=1
      
 
     
