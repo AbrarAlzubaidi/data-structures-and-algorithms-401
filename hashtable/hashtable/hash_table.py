@@ -21,7 +21,7 @@ class HashTable(object):
 
     def add(self, key, value):
         index = self.custom_hash(key)
-        # if location is None 
+        # if location is None add to hash table normally
         if not self.map[index]:
             self.map[index] = [key,value]
         # collision state
