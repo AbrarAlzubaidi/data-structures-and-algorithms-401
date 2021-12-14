@@ -10,7 +10,6 @@ class Linked_list():
     count =0
     def __init__(self):
         self.head=None
-
     def append(self, value):
         """
         this methos for add a node either for an empty list or add from end to an existing list
