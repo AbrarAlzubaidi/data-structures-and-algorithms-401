@@ -57,7 +57,7 @@ class Graph:
         do: get all nighbors for the node
         return: a list of edges
         """
-        return self.__adj_list.get(node.value,[])
+        return self.__adj_list.get(node,[])
 
     def get_nodes(self):
         """
