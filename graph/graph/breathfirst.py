@@ -1,5 +1,18 @@
 from collections import deque
 
+class Stack:
+  def __init__(self):
+    self.stack = deque()
+
+  def push(self, value):
+    self.stack.append(value)
+
+  def pop(self):
+    return self.stack.pop()
+
+  def __len__(self):
+    return len(self.stack)
+
 class Queue:
   def __init__(self):
     self.dq = deque()
@@ -124,43 +137,75 @@ class Graph:
 
     return result
 
+  def depth_first(self, node):
+    result=[]
+    stack= Stack()
+    visited= set()
+
+    stack.push(node)
+    visited.add(node.value)
+    result.append(node.value)
+        
+    while len(stack):
+      vertex=stack.pop()
+      neighbors = self.get_neighbors(vertex)
+
+      for edge in neighbors:
+        neighbor = edge.vertex
+
+        if neighbor not in visited:
+          stack.push(neighbor)
+          visited.add(neighbor)
+          result.append(neighbor.value)
+        
+    return result
+
 
 if __name__ == "__main__":
     graph = Graph()
-    node1=graph.add_node('Pandora')
-    node2=graph.add_node('Arendelle')
-    node3=graph.add_node('Metroville')
-    node4=graph.add_node('Monstroplolis')
-    node5=graph.add_node('Narnia')
-    node6=graph.add_node('Naboo')
-    # node1 : node2
+    node1=graph.add_node('a')
+    node2=graph.add_node('b')
+    node3=graph.add_node('c')
+    node4=graph.add_node('d')
+    node5=graph.add_node('e')
+    node6=graph.add_node('f')
+    node7=graph.add_node('g')
+    node8=graph.add_node('h')
+
+    # a : b,d
     graph.add_edge(node1, node2)
+    graph.add_edge(node1, node4)
 
-    # node2: node3,4
-    graph.add_edge(node2, node3)
+    # b:  a,d,c
+    graph.add_edge(node2, node1)
     graph.add_edge(node2, node4)
+    graph.add_edge(node2, node3)
 
-    # node3 : node2,4,5,6
+    # c : b
     graph.add_edge(node3, node2)
-    graph.add_edge(node3, node4)
-    graph.add_edge(node3, node5)
-    graph.add_edge(node3, node6)
 
-    # node4 : node2,3,6
+    # g: c
+    graph.add_edge(node7, node3)
+   
+    # d : a,b,e,f,h
+    graph.add_edge(node4, node1)
     graph.add_edge(node4, node2)
-    graph.add_edge(node4, node3)
+    graph.add_edge(node4, node5)
     graph.add_edge(node4, node6)
+    graph.add_edge(node4, node8)
 
-    # node5 : node3,6
-    graph.add_edge(node5, node3)
-    graph.add_edge(node5, node6)
+    # e : d
+    graph.add_edge(node5, node4)
 
-    # node6 : node3,4,5
-    graph.add_edge(node6, node3)
+    # f : d,h
     graph.add_edge(node6, node4)
-    graph.add_edge(node6, node5)
+    graph.add_edge(node6, node8)
 
-    print('travrse:\n', graph.breath_first(node1))
+    # h: f,d
+    graph.add_edge(node8, node4)
+    graph.add_edge(node8, node6)
+
+    print('travrse:\n', graph.depth_first(node1))
 
 
 
