@@ -32,7 +32,7 @@ def test_get_neighbors(graph):
     node2=graph.add_node(9)
     graph.add_edge(node1, node2)
     actual = graph.get_neighbors(node1)
-    expected = [[9, 0]]
+    expected = []
     assert actual == expected
 
 # The proper size is returned, representing the number of nodes in the graph

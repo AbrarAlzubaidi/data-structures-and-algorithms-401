@@ -160,14 +160,6 @@ if __name__ == "__main__":
     graph.add_edge(node6, node4)
     graph.add_edge(node6, node5)
 
-
-
-    # print('Graph 1 \n')
-    # print('all nodes: ', graph.get_nodes())
-    # print('all neighbors for node1 (5): ', graph.get_neighbors(node1))
-    # print('all neighbors for node2 (9): ', graph.get_neighbors(node2))
-    # print('Graph 1 >>>\n',graph.get_graph())
-    # print('Graph 1 size: ', graph.size())
     print('travrse:\n', graph.breath_first(node1))
 
 
