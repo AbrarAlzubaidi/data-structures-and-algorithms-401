@@ -119,7 +119,3 @@ if __name__ == "__main__":
     graph3= Graph()
     print('Graph 3 >>>\n',graph3.get_graph())
     print('Graph 3 size: ', graph3.size())
-
-
-
-

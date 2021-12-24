@@ -1,7 +1,6 @@
-from sys import exec_prefix
-from types import AsyncGeneratorType
 from graph import __version__
 from graph.graph import Graph
+from graph.breathfirst import Graph as Graph2
 import pytest
 def test_version():
     assert __version__ == '0.1.0'
@@ -55,6 +54,39 @@ def test_empty_graph():
     graph = Graph()
     actual = graph.size()
     expected = 'null'
+    assert actual == expected
+
+def test_breadth_first():
+    graph = Graph2()
+    node1=graph.add_node('Pandora')
+    node2=graph.add_node('Arendelle')
+    node3=graph.add_node('Metroville')
+    node4=graph.add_node('Monstroplolis')
+    node5=graph.add_node('Narnia')
+    node6=graph.add_node('Naboo')
+    # node1 : node2
+    graph.add_edge(node1, node2)
+    # node2: node3,4
+    graph.add_edge(node2, node3)
+    graph.add_edge(node2, node4)
+    # node3 : node2,4,5,6
+    graph.add_edge(node3, node2)
+    graph.add_edge(node3, node4)
+    graph.add_edge(node3, node5)
+    graph.add_edge(node3, node6)
+    # node4 : node2,3,6
+    graph.add_edge(node4, node2)
+    graph.add_edge(node4, node3)
+    graph.add_edge(node4, node6)
+    # node5 : node3,6
+    graph.add_edge(node5, node3)
+    graph.add_edge(node5, node6)
+    # node6 : node3,4,5
+    graph.add_edge(node6, node3)
+    graph.add_edge(node6, node4)
+    graph.add_edge(node6, node5)
+    actual =graph.breath_first(node1)
+    expected =  ['Pandora', 'Arendelle', 'Metroville', 'Monstroplolis', 'Naboo', 'Narnia']
     assert actual == expected
 
 @pytest.fixture
